@@ -1,0 +1,7 @@
+<h1>Seja Bem Vindo Ao <%= nome_aplicacao %></h1>
+<p>Idioma utilizado nesta aplicação é: <%= locale %></p>
+<p><strong> Data: <%= l(Date.today) %></strong></p>
+<p><%= t('hello')%></p>
+<%= render "menu" %>
+<p>Você está em ambiente de <strong><%= ambiente_rails  %></strong></p>
+<p>Teste de params <strong><%= @meu_nome%></strong></p>
