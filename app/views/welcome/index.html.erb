@@ -1,3 +1,9 @@
+<p>
+    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+    <%= link_to 'English', root_path(locale: 'en') %>
+</p>
 <h1>Seja Bem Vindo Ao <%= nome_aplicacao %></h1>
 <p>Idioma utilizado nesta aplicação é: <%= t('actual_locale') %></p>
 <p><strong> Data: <%= l(Date.today) %></strong></p>
