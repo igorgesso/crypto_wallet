@@ -1,13 +1,8 @@
-<p>
-    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-    <%= link_to 'English', root_path(locale: 'en') %>
-</p>
-<h1>Seja Bem Vindo Ao <%= nome_aplicacao %></h1>
-<p>Idioma utilizado nesta aplicação é: <%= t('actual_locale') %></p>
-<p><strong> Data: <%= l(Date.today) %></strong></p>
-<p><%= t('hello')%></p>
-<%= render "menu" %>
-<p>Você está em ambiente de <strong><%= ambiente_rails  %></strong></p>
-<p>Teste de params <strong><%= @meu_nome%></strong></p>
+<div class="jumbotron">
+    <p><strong> <%= l(Date.today) %></strong></p>
+  <h1 class="display-4"><%= t('welcome')%></h1>
+  <p class="lead">Esse é o <%= nome_aplicacao %>, para você cadastrar suas moedas e visualizar.</p>
+  <hr class="my-4">
+  <p>Para começar, selecione uma das opções abaixo:</p>
+  <%= render "menu" %>
+</div>

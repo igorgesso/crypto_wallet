@@ -30,6 +30,9 @@ gem 'pry-rails'
 gem 'tty-spinner'
 gem 'rails-i18n', '~> 5.1'
 
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
